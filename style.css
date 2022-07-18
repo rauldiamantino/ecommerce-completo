@@ -23,13 +23,15 @@ a:hover {
 
 header {
     position: fixed;
+    top: 0;
     z-index: 1000;
     width: 100%;
 }
 
 /* Tarja Topo */
 #tarja-topo {
-    padding: 6px;
+    height: 30px;
+    padding: 2px;
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -39,14 +41,15 @@ header {
 #topo {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 20px 0px;
+    justify-content: space-between;
     align-items: center;
+    padding: 30px 20px;
+    height: 170px;
+    background-color: white;
 }
 
 #logo {
-    width: 250px;
-    max-width: 45%;
+    width: 200px;
     order: 2;
 }
 
@@ -96,42 +99,12 @@ header {
     width: 25px;
 }
 
-/* Botão do Menu (Categorias) Responsivo */
-#btn-responsivo {
-    display: none;
-}
-
-#label-btn {
-    display: none;
-    font: normal 36px Arial;
-    color: #000;
-    line-height: 0;
-    order: 1;
-    cursor: pointer;
-}
-
-#titulo-categorias {
-    position: relative;
-}
-
-/* Botão Fechar (Categorias) Responsivo */
-#btn-fechar-responsivo {
-    display: none;
-    font-size: 30px;
-    background-color: rgba(255, 255, 255, 0.048);
-    border-radius: 50px;
-    font-weight: bold;
-    line-height: 0.8;
-    color: white;
-    top: 0;
-    right: 0;
-}
-
 /* Menu Categorias */
 #menu-categorias {
     width: 98%;
     order: 5;
-    margin-top: 20px;
+    margin: auto;
+    margin-top: 30px;
     margin-bottom: -20px;
     border-top: 1px solid rgb(206, 206, 206);
 }
@@ -146,9 +119,7 @@ header {
 }
 
 #menu-categorias nav ul li {
-    width: 100%;
-    
-    
+    width: 100%;   
 }
 
 #menu-categorias nav ul a{
@@ -187,18 +158,63 @@ header {
     display: block;
 }
 
+
+/* Botão do Menu (Categorias) Responsivo */
+#btn-responsivo {
+    display: none;
+}
+
+#label-btn {
+    display: none;
+    font: normal 36px Arial;
+    color: #000;
+    line-height: 0;
+    order: 1;
+    cursor: pointer;
+}
+
+#titulo-categorias {
+    position: relative;
+}
+
+/* Botão Fechar (Categorias) Responsivo */
+#btn-fechar-responsivo {    
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 50px;
+    font-weight: bold;
+    line-height: 0.8;
+    color: transparent;
+    top: 0;
+    right: 0;
+    display: none;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Conteúdo da Página */
 #conteudo {
-    width: 1200px;
-    max-width: 100%;
+    width: 100%;
+    margin-top: 200px;
+}
+
+/* Banner Principal */
+#carrossel-banner-principal{
     margin: auto;
-    height: 100vh;
+    width: 100%;
+}
+
+#banner-principal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Rodapé */
 #rodape {
     width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     background-color:  rgb(245, 245, 245);
 }
 
@@ -209,7 +225,7 @@ header {
 #bloco-top {
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     padding: 20px;
 }
@@ -232,17 +248,16 @@ header {
 @media (max-width: 860px) {
     /* Topo */
     #topo {
-        padding: 5px 10px;        
+        padding: 10px 10px;        
+        height: 100px;
         justify-content: space-between;
     }
     
     /* Bloco Pesquisar - Topo */
     #pesquisar {
         order: 5;
-        margin-top: 5px;
-        margin-bottom: -5px;
         width: 100vw;
-        
+        margin-top: 11px;      
     }
 
     #pesquisar-campo {
@@ -318,5 +333,31 @@ header {
     #btn-fechar-responsivo {
         display: block;
         position: absolute; 
+        z-index: 1;
+        color: white;
     }
+
+    /* Conteúdo */
+    #conteudo {
+        width: 100%;
+        margin-top: 130px;
+    }
+
+    /* Rodapé */
+    #bloco-top {
+        flex-flow: column nowrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Rodapé - Espaçamento Vertical */
+    #institucional, #conta, #duvidas, #pagamentos {
+        padding: 10px;
+        border-bottom: 1px solid rgb(206, 206, 206);
+    }
+
+    #seguranca {
+        padding-top: 10px;
+    }
+
 }
