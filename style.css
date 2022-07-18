@@ -253,6 +253,11 @@ header {
         justify-content: space-between;
     }
     
+    /* Logo */
+    #logo {
+        max-width: 50%;
+    }
+
     /* Bloco Pesquisar - Topo */
     #pesquisar {
         order: 5;
