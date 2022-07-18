@@ -195,26 +195,32 @@ header {
 /* Conteúdo da Página */
 #conteudo {
     width: 100%;
+    height: 100vh;
+    margin: auto;
     margin-top: 200px;
 }
 
 /* Banner Principal */
 #carrossel-banner-principal{
-    margin: auto;
-    width: 100%;
+    width: 100%;    
+    height: 600px;
 }
 
 #banner-principal-img {
     width: 100%;
-    height: 100%;
+    height: 600px;
     object-fit: cover;
 }
 
 /* Rodapé */
+
 #rodape {
     width: 100%;
+    min-height: 310px;
+    padding: 20px 0;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    justify-content: center;
     background-color:  rgb(245, 245, 245);
 }
 
