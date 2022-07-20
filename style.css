@@ -119,15 +119,15 @@ header {
 }
 
 #menu-categorias nav ul li {
-    width: 100%;   
+    width: 100%;
 }
 
 #menu-categorias nav ul a{
     display: flex;
     flex-flow: row nowrap;   
     justify-content: space-around; 
-    padding: 20px 20px;
     text-decoration: none;
+    padding: 20px 20px;
 }
 
 #menu-categorias nav ul a:hover{
@@ -305,8 +305,12 @@ header {
         border-bottom: 1px solid rgb(206, 206, 206);
     }
 
+    #menu-categorias nav ul li a {
+        width: 100px;
+    }
 
-    #menu-categorias nav ul li a:hover {
+
+    #menu-categorias nav ul li:hover {
         background-color: rgba(194, 116, 0, 0.37);
     }
 
@@ -326,9 +330,10 @@ header {
         border: none;
     }
 
-    #menu-categorias li ul a{
+    #menu-categorias ul li ul a{
         padding: 5px 10px;
         border: none;
+        width: 100%;        
     }
 
     /* Botão de Menu Categorias - Responsivo */
