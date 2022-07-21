@@ -30,17 +30,18 @@
             </a>
         </div>
 
-        <!-- Botão do Menu (Categorias) Responsivo -->
-        <input type="checkbox" id="btn-responsivo">
-        <label for="btn-responsivo" id="label-btn">&boxH;</label>
+        <!-- Botão Abrir do Menu Categorias - Responsivo -->
+        <button id="btn-abrir" onclick="abrirMenu()">
+            <img src="img/btn-menu.png" alt="Botão Menu Categorias" id="btn-abrir-img">
+        </button>
 
         <!-- Menu Categorias -->
         <div id="menu-categorias">
             <nav>   
                 <ul>
                     <h2>Categorias</h2>
-                    <!-- Botão do Menu (Categorias) Responsivo -->
-                    <a href="" id="btn-fechar-responsivo">X</a>
+                    <!-- Botão Fechar do Menu Categorias - Responsivo -->
+                    <button id="btn-fechar" onclick="abrirMenu()">X</button>
                     <li>
                         <a href="">Meninas</a>
                         <ul>
@@ -66,12 +67,10 @@
                     <li><a href="">Dormir</a></li>
                     <li><a href="">Passear</a></li>
                 </ul>
-                
             </nav>
         </div>
     </div>
     </header>
-    
     <main>
         <!-- Conteúdo -->
         <div id="conteudo">
@@ -131,5 +130,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
