@@ -44,54 +44,99 @@
                     <!-- Botão Fechar do Menu Categorias - Responsivo -->
                     <button id="btn-fechar" onclick="abrirMenu()">X</button>
                     <li>
-                        <a href="">Meninas</a>
+                        <a href="">Uniforme de Jogo</a>
                         <ul>
-                            <li><a href="">Body</a></li>    
-                            <li><a href="">Blusa</a></li>
-                            <li><a href="">Body</a></li>
-                            <li><a href="">Macaquinho</a></li>
+                            <li><a href="">Camisa I</a></li>    
+                            <li><a href="">Camisa II</a></li>
+                            <li><a href="">Camisa III</a></li>
+                            <li><a href="">Camisa de Goleiro</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Meninos</a></li>
-                    <li><a href="">Unissex</a></li>
-                    <li><a href="">Amamentar</a></li>
+                    <li><a href="">Treino e Viagem</a></li>
+                    <li><a href="">Linha Torcedor</a></li>
+                    <li><a href="">Presentes</a></li>
                     <li>
-                        <a href="">Brincar</a>
+                        <a href="">Acessórios</a>
                         <ul>
-                            <li><a href="">Andadores de Primeiros Passos</a></li>
-                            <li><a href="">Banho, Praia e Piscina</a></li>
-                            <li><a href="">Pelúcias</a></li>
+                            <li><a href="">Bolas</a></li>
+                            <li><a href="">Gorros e Bonés</a></li>
+                            <li><a href="">Máscaras</a></li>
                             <li><a href="">Livros</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Comer</a></li>
-                    <li><a href="">Dormir</a></li>
-                    <li><a href="">Passear</a></li>
+                    <li><a href="">Outlet</a></li>
                 </ul>
             </nav>
         </div>
     </div>
     </header>
-    <main>
-        <!-- Conteúdo -->
-        <div id="conteudo">
+    <!-- Conteúdo -->
+    <main id="conteudo">
             <!-- Banner Principal -->
             <section id="carrossel-banner-principal">
-                <figure id="banner-principal">
-                    <picture>
-                        <source media="(max-width: 660px)" srcset="img/banner-principal-mobile.png">
-                        <img src="img/banner-principal.png" alt="Banner Principal" id="banner-principal-img">
-                    </picture>
-                </figure>
+                <img src="img/banner-principal-palmeiras.jpg" alt="Banner Principal" id="banner-principal-img">
             </section>
 
             <!-- Módulo de Produtos -->
-            <section id="modulo-de-produtos">
+            <section class="modulo-de-produtos">
                 
+                <div class="produto">
+                    <div class="bloco-img-produto">
+                        <img src="img/produtos/moleton-iconic.png" alt="Moleton Puma" class="img-produto">
+                    </div>
+                    <div class="boloco-texto-produto">
+                        <h2 class="titulo-produto">
+                            Moleton Iconic SEP Puma 22/23
+                        </h2>
+                        <p class="preco-produto">
+                            R$ 29,90
+                        </p>
+                        <p class="parcelamento-produto">
+                            Até 6x Sem Juros
+                        </p>
+                    </div>
+                </div>
 
+                <div class="produto">
+                    <div class="bloco-img-produto">
+                        <img src="img/produtos/camiseta-goal.png" alt="Camiseta Goal" class="img-produto">
+                    </div>
+                    <div class="boloco-texto-produto">
+                        <h2 class="titulo-produto">
+                            Camiseta Goal SEP Puma 22/23
+                        </h2>
+                        <p class="preco-produto">
+                            R$ 19,90
+                        </p>
+                        <p class="parcelamento-produto">
+                            Até 6x Sem Juros
+                        </p>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="bloco-img-produto">
+                        <img src="img/produtos/camiseta-iconic.png" alt="Camiseta Iconic Feminina" class="img-produto">
+                    </div>
+                    <div class="boloco-texto-produto">
+                        <h2 class="titulo-produto">
+                            Camiseta Iconic SEP Puma 22/23 - Feminina
+                        </h2>
+                        <p class="preco-produto">
+                            R$ 22,90
+                        </p>
+                        <p class="parcelamento-produto">
+                            Até 6x Sem Juros
+                        </p>
+                    </div>
+                </div>
             </section>
-            
-        </div>
+
+            <!-- Banner Duplo -->
+            <section id="banner-duplo">
+                <a href="#" id="banner-duplo-1-link"><img src="img/banner-agasalhos.png" alt="Agasalhos" id="banner-duplo-1"></a>
+                <a href="" id="banner-duplo-2-link"><img src="img/banner-infantil.png" alt="Infantil" id="banner-duplo-2"></a>
+            </section>
     </main>
     
     <footer>
@@ -140,6 +185,7 @@
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

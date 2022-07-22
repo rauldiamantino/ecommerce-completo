@@ -17,10 +17,6 @@ body {
     color: rgb(63, 63, 63);
 }
 
-body.close{
-    transform: translateX(150%);
-}
-
 a:hover {
     text-decoration: underline;
 }
@@ -36,7 +32,7 @@ header {
 #tarja-topo {
     position: relative;
     height: 30px;
-    padding: 2px;
+    padding: 5px;
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -197,25 +193,15 @@ header {
 
 /* Conteúdo da Página */
 #conteudo {
-    width: 100%;
-    height: 100vh;
     margin: auto;
     margin-top: 200px;
+    width: 100%;
+    min-height: 100vh;
 }
 
 /* Banner Principal */
 #carrossel-banner-principal{
     width: 100%;    
-    height: 600px;
-    position: relative;
-}
-
-#legenda-banner{
-    background-color: rgba(255, 5, 5, 0.116);
-    width: 100%;    
-    height: 100%;
-    position: absolute;
-    bottom: 0;
 }
 
 #banner-principal-img {
@@ -224,15 +210,128 @@ header {
     object-fit: cover;
 }
 
+/* Banner Duplo */
+#banner-duplo {
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+/* Banner 100% no responsivo */
+@media (max-width: 860px) {
+    #banner-duplo {
+        flex-direction: column;
+        row-gap: 10px;
+        width: 100%;
+        height: auto;
+    }    
+    
+    #banner-duplo-1-link, #banner-duplo-2-link{
+        min-width: 100%;
+    }
+}
+
+#banner-duplo-1-link {
+    width: 60%;
+}
+
+#banner-duplo-1 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#banner-duplo-2-link {
+    width: 40%;
+}
+
+
+#banner-duplo-2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* Módulo de Produtos */
+.modulo-de-produtos {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: row nowrap;
+    justify-content: center;
+    padding: 20px;
+    column-gap: 25px;
+}
+
+/* Exibir somente dois produtos no responsivo */
+@media (max-width: 860px) {
+    .produto:nth-child(3) {
+        display: none;
+    }
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.produto:hover {
+    border: 1px solid rgb(161, 161, 161);
+}
+
+.bloco-img-produto {
+    height: 400px;
+}
+
+.img-produto {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bloco-texto-produto {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco-texto-produto h2, p {
+    line-height: 1.4;
+}
+
+.preco-produto {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.titulo-produto, .parcelamento-produto {
+    
+}
+
 /* Rodapé */
+
+footer {
+    
+}
+
 #rodape {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color:  rgb(245, 245, 245);
     width: 100%;
     min-height: 310px;
     padding: 20px 0;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    background-color:  rgb(245, 245, 245);
+}
+
+#rodape a {
+    color: rgb(63, 63, 63);
 }
 
 #rodape div h2 {
@@ -245,6 +344,7 @@ header {
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 20px;
+    background-color:  rgb(245, 245, 245);
 }
 
 #pagamentos-img {
